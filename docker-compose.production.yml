@@ -1,0 +1,98 @@
+volumes:
+  production_postgres_data: {}
+  production_postgres_data_backups: {}
+  production_traefik: {}
+  
+  
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/production/django/Dockerfile
+
+    image: backend_sat_task_production_django
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - ./.envs/.production/.django
+      - ./.envs/.production/.postgres
+    command: /start
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: backend_sat_task_production_postgres
+    volumes:
+      - production_postgres_data:/var/lib/postgresql/data
+      - production_postgres_data_backups:/backups
+    env_file:
+      - ./.envs/.production/.postgres
+
+  traefik:
+    build:
+      context: .
+      dockerfile: ./compose/production/traefik/Dockerfile
+    image: backend_sat_task_production_traefik
+    depends_on:
+      - django
+    volumes:
+      - production_traefik:/etc/traefik/acme
+    ports:
+      - '0.0.0.0:80:80'
+      - '0.0.0.0:443:443'
+
+  redis:
+    image: docker.io/redis:6
+
+
+# temp below
+# testing local machine
+# volumes:
+#   local_postgres_data: {}
+#   local_postgres_data_backups: {}
+#   local_traefik: {}
+
+# services:
+#   django:
+#     build:
+#       context: .
+#       dockerfile: ./compose/production/django/Dockerfile
+#     image: backend_sat_task_local_django
+#     depends_on:
+#       - postgres
+#       - redis
+#     env_file:
+#       - ./.envs/.production/.django
+#       - ./.envs/.production/.postgres
+#     command: /start
+
+#   postgres:
+#     build:
+#       context: .
+#       dockerfile: ./compose/production/postgres/Dockerfile
+#     image: backend_sat_task_local_postgres
+#     volumes:
+#       - local_postgres_data:/var/lib/postgresql/data
+#       - local_postgres_data_backups:/backups
+#     env_file:
+#       - ./.envs/.production/.postgres
+
+#   traefik:
+#     build:
+#       context: .
+#       dockerfile: ./compose/production/traefik/Dockerfile
+#     image: backend_sat_task_local_traefik
+#     depends_on:
+#       - django
+#     volumes:
+#       - ./compose/production/traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+#       - local_traefik:/etc/traefik/acme
+#     ports:
+#         - "80:80"
+
+#   redis:
+#     image: docker.io/redis:6
+
+    

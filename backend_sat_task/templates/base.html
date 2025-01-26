@@ -1,0 +1,23 @@
+{% load static tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA</title>
+    <script src="{% static 'js/htmx.min.js' %}"></script>
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.css">
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    {% tailwind_css %}
+</head>
+<body class="overflow-x-hidden overflow-y-auto p-0">
+    {% csrf_token %}
+    {% block content %}{% endblock  %}
+    {# Your custom static files #}
+    {% block extra_js %}
+    <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js" crossorigin></script>
+    <script src="{% static 'js/project.js' %}"></script>
+    {% endblock %}
+</body>
+</html>

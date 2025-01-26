@@ -1,0 +1,254 @@
+[
+    {
+        "question": "A rectangle has a length that is 3 units more than twice its width. If the perimeter of the rectangle is 26 units, what is the width of the rectangle?",
+        "solution": "<color=green>Choice B is correct.</color>\n<b>Let's solve this step by step:</b>\n1. Let w = width\n2. Length = 2w + 3\n3. Perimeter formula: 2(l + w) = 26\n4. 2(2w + 3 + w) = 26\n5. 2(3w + 3) = 26\n6. 6w + 6 = 26\n7. 6w = 20\n8. w = <color=blue>5</color>",
+        "correct_answer": "5",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "steps": [
+            {
+                "title": "Set up equation",
+                "result": "2(2w + 3 + w) = 26",
+                "image_url": null
+            },
+            {
+                "title": "Solve for w",
+                "result": "w = 5",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "medium",
+        "tags": [
+            "algebra",
+            "geometry"
+        ]
+    },
+    {
+        "question": "The quadratic function f(x) = x² - 6x + 8 has two roots. What is the positive root?",
+        "solution": "<color=green>Choice C is correct.</color>\n<b>To find the roots:</b>\n1. Use quadratic formula: x = (-b ± √(b² - 4ac))/2a\n2. a=1, b=-6, c=8\n3. x = (6 ± √(36 - 32))/2\n4. x = (6 ± √4)/2\n5. x = (6 ± 2)/2\n6. x = 4 or x = 2\n7. The <color=blue>positive root is 4</color>",
+        "correct_answer": "4",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "steps": [
+            {
+                "title": "Use quadratic formula",
+                "result": "x = (-(-6) ± √(36 - 32))/2",
+                "image_url": null
+            },
+            {
+                "title": "Find roots",
+                "result": "x = 4 or x = 2",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "hard",
+        "tags": [
+            "algebra",
+            "quadratic"
+        ]
+    },
+    {
+        "question": "In a survey of 200 students, 60% prefer vanilla ice cream. How many students prefer vanilla ice cream?",
+        "solution": "<color=green>Choice A is correct.</color>\n<b>To solve:</b>\n1. Convert 60% to decimal: 60% = 0.60\n2. Multiply: 200 × 0.60 = <color=blue>120</color>",
+        "correct_answer": "120",
+        "options": [
+            "120",
+            "140",
+            "160",
+            "180"
+        ],
+        "steps": [
+            {
+                "title": "Convert percentage",
+                "result": "60% = 0.60",
+                "image_url": null
+            },
+            {
+                "title": "Calculate total",
+                "result": "200 × 0.60 = 120 students",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "easy",
+        "tags": [
+            "percentages",
+            "word-problems"
+        ]
+    },
+    {
+        "question": "A line passes through points (2, 5) and (4, 11). What is the slope of this line?",
+        "solution": "<color=green>Choice B is correct.</color>\n<b>Let's solve using the slope formula:</b>\n1. Slope = (y₂ - y₁)/(x₂ - x₁)\n2. = (11 - 5)/(4 - 2)\n3. = 6/2\n4. = <color=blue>3</color>",
+        "correct_answer": "3",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ],
+        "steps": [
+            {
+                "title": "Use slope formula",
+                "result": "(11 - 5)/(4 - 2)",
+                "image_url": null
+            },
+            {
+                "title": "Calculate final answer",
+                "result": "3",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "medium",
+        "tags": [
+            "algebra",
+            "coordinate-geometry"
+        ]
+    },
+    {
+        "question": "If 3x + 2y = 12 and y = x + 1, what is the value of x?",
+        "solution": "<color=green>Choice C is correct.</color>\n<b>To solve:</b>\n1. Substitute y = x + 1 into first equation\n2. 3x + 2(x + 1) = 12\n3. 3x + 2x + 2 = 12\n4. 5x + 2 = 12\n5. 5x = 10\n6. x = <color=blue>2</color>",
+        "correct_answer": "2",
+        "options": [
+            "1",
+            "1.5",
+            "2",
+            "2.5"
+        ],
+        "steps": [
+            {
+                "title": "Substitute y",
+                "result": "3x + 2(x + 1) = 12",
+                "image_url": null
+            },
+            {
+                "title": "Solve for x",
+                "result": "x = 2",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "hard",
+        "tags": [
+            "algebra",
+            "system-of-equations"
+        ]
+    },
+    {
+        "question": "A circle has a radius of 6 units. What is its circumference in terms of π?",
+        "solution": "<color=green>Choice D is correct.</color>\n<b>Using the circumference formula:</b>\n1. C = 2πr\n2. C = 2π(6)\n3. C = <color=blue>12π</color>",
+        "correct_answer": "12π",
+        "options": [
+            "6π",
+            "8π",
+            "10π",
+            "12π"
+        ],
+        "steps": [
+            {
+                "title": "Apply formula",
+                "result": "C = 2πr = 2π(6)",
+                "image_url": null
+            },
+            {
+                "title": "Simplify",
+                "result": "C = 12π",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "easy",
+        "tags": [
+            "geometry",
+            "circles"
+        ]
+    },
+    {
+        "question": "What is the value of x that satisfies the equation 2(x - 3) + 4 = 10?",
+        "solution": "<color=green>Choice A is correct.</color>\n<b>Let's solve this:</b>\n1. 2(x - 3) = 2x - 6\n2. 2x - 6 + 4 = 10\n3. 2x - 2 = 10\n4. 2x = 12\n5. x = <color=blue>6</color>",
+        "correct_answer": "6",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "steps": [
+            {
+                "title": "Distribute Terms",
+                "result": "2(x - 3) = 2x - 6",
+                "image_url": null
+            },
+            {
+                "title": "Solve For x",
+                "result": "x = 6",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "easy",
+        "tags": []
+    },
+    {
+        "question": "A right triangle has legs of lengths 6 and 8. What is the length of the hypotenuse?",
+        "solution": "<color=green>Choice B is correct.</color>\n<b>Using the Pythagorean theorem:</b>\n1. hypotenuse² = 6² + 8²\n2. hypotenuse² = 36 + 64\n3. hypotenuse² = 100\n4. hypotenuse = <color=blue>10</color>",
+        "correct_answer": "10",
+        "options": [
+            "9",
+            "10",
+            "12",
+            "14"
+        ],
+        "steps": [
+            {
+                "title": "Apply Pythagorean Theorem",
+                "result": "c^2 = a^2 + b^2",
+                "image_url": null
+            },
+            {
+                "title": "Simplify to find c",
+                "result": "c = 10",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "medium",
+        "tags": []
+    },
+    {
+        "question": "What is the median of the data set {5, 7, 3, 9, 11}?",
+        "solution": "<color=green>Choice B is correct.</color>\n<b>Sort the set and find the middle value:</b>\n1. Sorted set: 3, 5, 7, 9, 11\n2. The middle value (3rd) is <color=blue>7</color>",
+        "correct_answer": "7",
+        "options": [
+            "5",
+            "7",
+            "8",
+            "9"
+        ],
+        "steps": [
+            {
+                "title": "Sort The Array",
+                "result": "3, 5, 7, 9, 11",
+                "image_url": null
+            },
+            {
+                "title": "Identify Middle Element",
+                "result": "Median = 7",
+                "image_url": null
+            }
+        ],
+        "image_url": null,
+        "difficulty": "easy",
+        "tags": []
+    }
+]
