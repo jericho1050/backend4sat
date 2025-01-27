@@ -13,19 +13,50 @@
             {
                 "title": "Set up equation",
                 "result": "2(2w + 3 + w) = 26",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Solve for w",
                 "result": "w = 5",
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
+            }
+        ],
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
+        "difficulty": "medium",
+        "tags": [
+            "algebra",
+            "geometry"
+        ]
+    },
+    {
+        "question": "What's the value of x in 1x + 2 = 4",
+        "solution": "<b>The answer is 2, </b>you want to keep isolate x until you get your answer.",
+        "correct_answer": "2",
+        "options": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ],
+        "steps": [
+            {
+                "title": "Step 1: Isolate variable x by subtracting both sides with -1",
+                "result": "1x + 2 - 2 = 4 -2",
+                "image_url": null
+            },
+            {
+                "title": "Step 2: you got your answer",
+                "result": "<i>Which is x = 2</i>",
                 "image_url": null
             }
         ],
         "image_url": null,
         "difficulty": "medium",
         "tags": [
-            "algebra",
-            "geometry"
+            {
+                "name": "Math",
+                "slug": "math"
+            }
         ]
     },
     {
@@ -42,15 +73,15 @@
             {
                 "title": "Use quadratic formula",
                 "result": "x = (-(-6) ± √(36 - 32))/2",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Find roots",
                 "result": "x = 4 or x = 2",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "hard",
         "tags": [
             "algebra",
@@ -71,15 +102,15 @@
             {
                 "title": "Convert percentage",
                 "result": "60% = 0.60",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Calculate total",
                 "result": "200 × 0.60 = 120 students",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "easy",
         "tags": [
             "percentages",
@@ -100,15 +131,15 @@
             {
                 "title": "Use slope formula",
                 "result": "(11 - 5)/(4 - 2)",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Calculate final answer",
                 "result": "3",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "medium",
         "tags": [
             "algebra",
@@ -129,15 +160,15 @@
             {
                 "title": "Substitute y",
                 "result": "3x + 2(x + 1) = 12",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Solve for x",
                 "result": "x = 2",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "hard",
         "tags": [
             "algebra",
@@ -158,15 +189,15 @@
             {
                 "title": "Apply formula",
                 "result": "C = 2πr = 2π(6)",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Simplify",
                 "result": "C = 12π",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "easy",
         "tags": [
             "geometry",
@@ -187,15 +218,15 @@
             {
                 "title": "Distribute Terms",
                 "result": "2(x - 3) = 2x - 6",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Solve For x",
                 "result": "x = 6",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "easy",
         "tags": []
     },
@@ -213,15 +244,15 @@
             {
                 "title": "Apply Pythagorean Theorem",
                 "result": "c^2 = a^2 + b^2",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Simplify to find c",
                 "result": "c = 10",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "medium",
         "tags": []
     },
@@ -239,16 +270,73 @@
             {
                 "title": "Sort The Array",
                 "result": "3, 5, 7, 9, 11",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png"
             },
             {
                 "title": "Identify Middle Element",
                 "result": "Median = 7",
-                "image_url": null
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
             }
         ],
-        "image_url": null,
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/test.png",
         "difficulty": "easy",
         "tags": []
+    },
+    {
+        "question": "If <b>2x</b> - 1 = 9, what is the value of <color=yellow>x</color>?",
+        "solution": "<color=green>Choice A is correct.</color>\n<b>Steps:</b>\n1. Add 1 to both sides: <color=red>2x = 10</color>\n2. Divide by 2: <color=blue>x = 5</color>",
+        "correct_answer": "5",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "steps": [
+            {
+                "title": "Isolate 2x",
+                "result": "<color=cyan>2x = 9 + 1</color>",
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
+            },
+            {
+                "title": "Solve for x",
+                "result": "x = 5",
+                "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp"
+            }
+        ],
+        "image_url": "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp",
+        "difficulty": "easy",
+        "tags": [
+            "algebra"
+        ]
+    },
+    {
+        "question": "What is the volume of a cube with edge length <i><color=teal>4</color></i> units?",
+        "solution": "<color=green>Choice C is correct.</color>\n<b>Volume formula:</b> side³ = <color=magenta>4³</color> = <color=blue>64</color>",
+        "correct_answer": "64",
+        "options": [
+            "16",
+            "32",
+            "64",
+            "96"
+        ],
+        "steps": [
+            {
+                "title": "Apply formula",
+                "result": "<color=gray>side³ = 4³</color>",
+                "image_url": "https://example.com/volume_formula.png"
+            },
+            {
+                "title": "Compute value",
+                "result": "64",
+                "image_url": "https://example.com/volume_formula.png"
+            }
+        ],
+        "image_url": "https://example.com/volume_formula.png",
+        "difficulty": "medium",
+        "tags": [
+            "geometry",
+            "volume"
+        ]
     }
 ]

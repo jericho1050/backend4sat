@@ -35,6 +35,9 @@ api_key = ApiKey()
 )  # noqa: E501, RUF100, UP006
 @paginate
 def get_questions(request):
+    """
+    Retrieves a paginated list of questions with related options, steps, tags, and metadata.
+    """
     questions = Question.objects.prefetch_related("options", "steps", "tags").all()
     return [
         {
@@ -59,6 +62,9 @@ def get_questions(request):
     url_name="question_retrieve",
 )
 def get_question(request, question_id: int):
+    """
+    Retrieve a question by its ID with related details.
+    """
     question = get_object_or_404(Question, id=question_id)
     return {
         "Id": question.id,
@@ -81,6 +87,9 @@ def get_question(request, question_id: int):
     url_name="question_create",
 )
 def create_question(request, payload: QuestionIn):
+    """
+    Create a new question with options, steps, and tags.
+    """
     # Extract nested data
     data = payload.dict()
     options_data = data.pop("options", [])
@@ -133,6 +142,9 @@ def create_question(request, payload: QuestionIn):
     response=QuestionOut,
 )
 def patch_question(request, question_id: int, payload: QuestionPatchSchema):
+    """
+    Partially update an existing question, including nested fields.
+    """
     question = get_object_or_404(Question, id=question_id)
     data = payload.dict(exclude_unset=True)  # Only get set values
 
@@ -179,6 +191,9 @@ def patch_question(request, question_id: int, payload: QuestionPatchSchema):
 
 @api.delete("/question/{question_id}", auth=api_key, url_name="question_delete")
 def delete_question(request, question_id):
+    """
+    Delete a question by its ID.
+    """
     question = get_object_or_404(Question, id=question_id)
     question.delete()
     return {"sucess": True}
@@ -203,7 +218,7 @@ def upload_image(request, file: UploadedFile = File(...)):  # noqa: B008
     )
 
     # Generate public URL
-    url = f"https://{settings.AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/{file_name}"
+    url = f"https://{settings.AWS_S3_CUSTOM_DOMAIN}/{file_name}"
 
     return {"url": url}
 

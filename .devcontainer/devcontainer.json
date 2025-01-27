@@ -40,7 +40,7 @@
                     "languageServer": "Pylance",
                     "linting.enabled": true,
                     "linting.mypyEnabled": true,
-                    "linting.mypyPath": "/usr/local/bin/mypy",
+                    "linting.mypyPath": "/usr/local/bin/mypy"
                 }
             },
             // https://code.visualstudio.com/docs/remote/devcontainerjson-reference#_vs-code-specific-properties
@@ -54,8 +54,16 @@
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "charliermarsh.ruff",
+                "ms-python.black-formatter",
+
                 // django
-                "batisteo.vscode-django"
+                "batisteo.vscode-django",
+                "bradlc.vscode-tailwindcss",
+                "austenc.tailwind-docs",
+                "otovo-oss.htmx-tags",
+                "dbaeumer.vscode-eslin",
+                "ecmel.vscode-html-css",
+                
             ]
         }
     },

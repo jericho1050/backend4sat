@@ -76,6 +76,17 @@ COPY --chown=django:django . ${APP_HOME}
 # make django owner of the WORKDIR directory as well.
 RUN chown -R django:django ${APP_HOME}
 
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get update \
+    && apt-get install -y nodejs \
+    && npm install -g npm@latest \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && chown -R django:django /usr/lib/node_modules \
+    && chown -R django:django /usr/bin/npm \
+    && chown -R django:django /usr/bin/node
+
 USER django
 
 RUN DATABASE_URL="" \
