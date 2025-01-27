@@ -149,7 +149,25 @@ $ python manage.py test
 
 ## Deployment
 
-TODO
+**Note**: docs is still ongoing here
+
+Create the env variables
+
+```sh
+cd backend4sat/.envs \
+mkdir .production
+```
+
+```sh
+.production $ vi .django # CTRL + C and CTRL + V
+.production $ vi .postgres # CTRL + C and CTRL + V
+```
+
+Don't forget to do a production build for django-tailwind in the VPS
+
+```sh
+% docker compose -f docker-compose.local.yml run --rm django python manage.py tailwind build
+```
 
 ### Docker
 
