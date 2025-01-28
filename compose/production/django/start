@@ -4,6 +4,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+# install theme's deps
+cd /app/theme && npm install
 
 python /app/manage.py tailwind build
 python /app/manage.py collectstatic --noinput
