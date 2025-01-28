@@ -141,7 +141,9 @@ if (url.pathname === "/create-question") {
     let stepCount = 1;
     const $container = document.getElementById('steps-container');
     const $addButton = document.getElementById('add-step');
+    const $imageUploadInput = document.getElementById('image-upload');
 
+    
     $addButton.addEventListener('click', () => {
         stepCount++;
         const $newStep = document.createElement('fieldset');
@@ -229,7 +231,7 @@ if (url.pathname === "/create-question") {
 
     // For create_question.html
     //  handle image uploading
-
+    $imageUploadInput.addEventListener('change', handleImageUpload);
     async function handleImageUpload(event) {
         const file = event.target.files[0];
         const imageUrlInput = document.getElementById('image-url-input');
