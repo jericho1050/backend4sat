@@ -89,6 +89,12 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && chown -R django:django /usr/bin/npm \
     && chown -R django:django /usr/bin/node
 
+# Setup npm and build tailwind
+WORKDIR ${APP_HOME}/theme/static_src
+RUN npm install
+
+WORKDIR ${APP_HOME}
+
 USER django
 
 RUN DATABASE_URL="" \
