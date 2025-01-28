@@ -16,12 +16,7 @@
     {# Your custom static files #}
     {% block extra_js %}
     {% comment %} <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js" crossorigin></script> {% endcomment %}
-        {# JavaScript imports #}
-        <script defer 
-                src="{% static 'js/project.js' %}"
-                type="module"
-                onerror="console.error('Failed to load project.js')">
-        </script>
+    <script src="{% static 'js/project.js' %}"></script>
     {% endblock %}
 </body>
 </html>
