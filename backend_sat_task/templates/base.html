@@ -14,9 +14,9 @@
     {% csrf_token %}
     {% block content %}{% endblock  %}
     {# Your custom static files #}
-    {% block extra_js %}
-    {% comment %} <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js" crossorigin></script> {% endcomment %}
-    <script src="{% static 'js/project.js' %}"></script>
-    {% endblock %}
+
+    <script defer src="{% static 'js/project.js' %}"></script>
+    {% block extra_js %}{% endblock %}
 </body>
 </html>
+{% comment %} <script src="https://cdn.ckeditor.com/ckeditor5/44.1.0/ckeditor5.umd.js" crossorigin></script> {% endcomment %}
