@@ -45,6 +45,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   libpq-dev \
   # Translations dependencies
   gettext \
+  curl \
   # entrypoint
   wait-for-it \
   # cleaning up unused files

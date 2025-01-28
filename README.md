@@ -154,7 +154,7 @@ $ python manage.py test
 Create the env variables
 
 ```sh
-cd backend4sat/.envs \
+cd backend4sat/.envs
 mkdir .production
 ```
 
