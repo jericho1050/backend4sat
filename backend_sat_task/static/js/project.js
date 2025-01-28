@@ -112,6 +112,8 @@ if (url.pathname === "/create-question") {
     /* For create_question.html
         Adding/Removing of Option Field
     */
+    const $addOption = document.getElementById('add-option-cta')
+    $addOption.addEventListener('click', addOption);
     function addOption() {
         const container = document.getElementById('options-container');
         const optionCount = container.children.length + 1;
@@ -140,10 +142,8 @@ if (url.pathname === "/create-question") {
     */
     let stepCount = 1;
     const $container = document.getElementById('steps-container');
-    const $addButton = document.getElementById('add-step');
-    const $imageUploadInput = document.getElementById('image-upload');
 
-    
+    const $addButton = document.getElementById('add-step');
     $addButton.addEventListener('click', () => {
         stepCount++;
         const $newStep = document.createElement('fieldset');
@@ -231,6 +231,7 @@ if (url.pathname === "/create-question") {
 
     // For create_question.html
     //  handle image uploading
+    const $imageUploadInput = document.getElementById('image-upload');
     $imageUploadInput.addEventListener('change', handleImageUpload);
     async function handleImageUpload(event) {
         const file = event.target.files[0];
@@ -273,6 +274,8 @@ if (url.pathname === "/create-question") {
     /* For create_question.html
         Making a POST request to /api/v0/questions
     */
+    const $formEl = document.getElementById('create-form');
+    $formEl.addEventListener('submit', handleSubmit);
     async function handleSubmit(e) {
         e.preventDefault();
         const formEl = e.target;
@@ -480,9 +483,9 @@ if (url.pathname === "/") {
         renderExplanation(solution, steps) {
             this.$explanationContainer.classList.remove('hidden');
             this.$explanation.innerHTML = RichTextParser.parse(solution);
-    
+
             const fallbackImage = "https://d12lqqa1y5u348.cloudfront.net/images/elementor-placeholder-image.webp";
-    
+
             steps.forEach((step, index) => {
                 this.$steps.innerHTML += `
                     <div id="step-${index}" class="p-2 my-2">
@@ -520,6 +523,5 @@ if (url.pathname === "/") {
 
     }
     new QuestionGame();
-
 
 }
