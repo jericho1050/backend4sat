@@ -163,10 +163,11 @@ mkdir .production
 .production $ vi .postgres # CTRL + C and CTRL + V
 ```
 
-Don't forget to do a production build for django-tailwind in the VPS
+Use the image I've pushed to in Docker Hub and deploy it in your preferred cloud provider.
 
 ```sh
-% docker compose -f docker-compose.local.yml run --rm django python manage.py tailwind build
+% docker compose -f docker-compose.production.yml build
+% docker push jericho1050/backend_sat_task_production_django:latest
 ```
 
 ### Docker
